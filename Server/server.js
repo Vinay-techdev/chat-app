@@ -7,9 +7,6 @@ import userRouter from './Routes/userRoute.js';
 import msgRouter from './Routes/msgRoute.js';
 import { Server } from 'socket.io';
 
-// dotenv.config();
-// const __filename = url.fileURLToPath(import.meta.url);
-// const __dirname = path.dirname(__filename);
 
 // Express app and HTTP Server
 const app = express();
@@ -44,23 +41,11 @@ io.on("connection", (socket) => {
   
 });
 
-// // Database Connection
-// mongoose.connect(`${process.env.MONGODB_URL}/chat-app`)
-//   .then(() => console.log('Connected To Database'))
-//   .catch(() => console.log('Not Connected'));
 
 // MiddleWare
 app.use(express.json({ limit: '4mb' }));
 app.use(express.urlencoded({ extended: false }));
 
-// // Cookie-Parser
-// app.use(cookieParser());
-
-// Cors 
-// const allowedOrigins = [
-//   process.env.FRONTEND_URL, // Production 
-//   'http://localhost:5173',  // Development
-// ];
 
 app.use(cors());
 
