@@ -1,11 +1,10 @@
-import React from 'react'
 import { Navigate, Route, Routes } from 'react-router-dom'
-import Home from './pages/Home'
+import Home from './Pages/Home'
 import {Toaster} from 'react-hot-toast'
 import { useContext } from 'react'
 import { AuthContext } from '../context/AuthContext'
 import Profile from './Pages/Profile'
-import Login from './pages/Login'
+import Login from './Pages/Login'
 
 
 const App = () => {
