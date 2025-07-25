@@ -6,7 +6,7 @@ A full-stack real-time chat application built using the MERN stack (MongoDB, Exp
 
 ## 🚀 Live Demo
 
-👉 [Visit the Live App](https://prescripto-nine-zeta.vercel.app/)
+👉 [Visit the Live App](https://chat-app-liart-alpha-30.vercel.app)
 
 ---
 
